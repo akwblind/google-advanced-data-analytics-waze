@@ -53,11 +53,16 @@ For this project, I applied two machine learning models to predict user churn: *
   - **Recall**: 0.171
   - **F1-Score**: 0.244
   - **Accuracy**: 0.812
+    
+- **Confusion Matrix**
+<img src="https://github.com/user-attachments/assets/acff2f12-91df-47ba-b5d9-b5fdc56da9f9" width="500"/>
 
 #### **Analysis:**
 Both models showed low recall, meaning they missed a significant portion of users who churned — this is critical since our goal is to accurately identify potential churners. The low precision and F1-scores indicate that both models struggle to predict churn events accurately. While accuracy was relatively high, it could be misleading given the class imbalance in the dataset, where 82% of users didn’t churn. Thus, a model that predicts "no churn" for most users would still appear accurate but fail to identify the churners. 
 
-Of note, I did perform hyperparameter tuning and tested the model on the validation set to confirm the model didn't overfit the training data.
+Of note, I did perform hyperparameter tuning and tested the model on the validation set to confirm the model didn't overfit the training data. Below you will find the variables that had the greatest effect on the models.
+
+<img src="https://github.com/user-attachments/assets/14927932-456e-4e4e-b0b5-342a4d5382c4" width="600"/>
 
 ---
 
